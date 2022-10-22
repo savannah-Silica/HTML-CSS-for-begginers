@@ -52,3 +52,34 @@ p{
     height: 600;
     width: 800;
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('/assets/bg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+nav ul{
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding-right: 60px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
