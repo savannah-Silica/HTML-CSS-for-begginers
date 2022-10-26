@@ -1,3 +1,59 @@
+html{
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.sponsor-container{
+    display:flex;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100px;
+    margin: 50px 190px ;
+    min-width: 0%;
+}
+
+h3{
+    font-size: 100px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+p{
+    margin-top: 4px;
+    font-size: 30px;
+    color: #828394;
+}
+
+.stats{
+    width: 400px;
+}
+.McGill{
+    height: 200;
+    width: 600;
+    margin-right: 3.5px;
+    margin-left: 5px;
+}
+.Amity{
+    height: 400;
+    width: 600;
+    margin-right: 3.5px;
+
+}
+.Houston{
+    height: 400;
+    width: 600;
+    margin-right: 3.5px;
+
+}
+.Plymouth{
+    height: 600;
+    width: 800;
+}
+
+
 *{
     margin: 0;
     padding: 0;
