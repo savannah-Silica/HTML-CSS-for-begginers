@@ -1,63 +1,10 @@
-html{
-    background-color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.sponsor-container{
-    display:flex;
-    /* flex-direction: row; */
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    flex-basis: 100px;
-    margin: 50px 190px ;
-    min-width: 0%;
-}
-
-h3{
-    font-size: 100px;
-    margin: 0px;
-    font-weight: bold;
-}
-
-p{
-    margin-top: 4px;
-    font-size: 30px;
-    color: #828394;
-}
-
-.stats{
-    width: 400px;
-}
-.McGill{
-    height: 200;
-    width: 600;
-    margin-right: 3.5px;
-    margin-left: 5px;
-}
-.Amity{
-    height: 400;
-    width: 600;
-    margin-right: 3.5px;
-
-}
-.Houston{
-    height: 400;
-    width: 600;
-    margin-right: 3.5px;
-
-}
-.Plymouth{
-    height: 600;
-    width: 800;
-}
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
 }
 .container{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('/assets/bg.jpg');
@@ -82,4 +29,169 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color: white;
+}
+
+/* Aside customs */
+aside {
+    z-index: 1;
+}
+
+aside::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.aside-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 150px;
+    color: #fff;
+}
+
+aside h1 {
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+aside .btn {
+    display: inline-block;
+    padding: 18px 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+aside .btn:hover {
+    color: white;
+    background-color: crimson;
+}
+
+aside h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+aside h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+aside h1:nth-child(3) {
+    animation-delay: 3s;
+}
+
+aside h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+aside h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+aside h1:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+aside h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+
+/* End of Aside */
+
+html {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.sponsor-container {
+    display: flex;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 100px;
+    margin: 50px 190px;
+    min-width: 0%;
+}
+
+h3 {
+    font-size: 100px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 4px;
+    font-size: 30px;
+    color: #828394;
+}
+
+.stats {
+    width: 400px;
+}
+
+.McGill {
+    height: 200;
+    width: 600;
+    margin-right: 3.5px;
+    margin-left: 5px;
+}
+
+.Amity {
+    height: 400;
+    width: 600;
+    margin-right: 3.5px;
+
+}
+
+.Houston {
+    height: 400;
+    width: 600;
+    margin-right: 3.5px;
+
+}
+
+.Plymouth {
+    height: 600;
+    width: 800;
 }
