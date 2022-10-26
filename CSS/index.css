@@ -169,6 +169,9 @@ p {
 .stats {
     width: 400px;
 }
+.stats h3{
+    font-size: 15px;
+}
 
 .McGill {
     height: 200;
