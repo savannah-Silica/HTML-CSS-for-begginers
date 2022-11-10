@@ -5,6 +5,14 @@
 }
 a{
     text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color: crimson;
+}
+span{
+    color: #05696b;
 }
 .container{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('/assets/bg.jpg');
@@ -25,10 +33,15 @@ nav ul{
     gap: 70px;
     padding-right: 60px;
     list-style: none;
+    position: fixed;
 }
 nav ul li a{
     text-decoration: none;
     color: white;
+}
+nav ul li a:hover{
+    color: crimson;
+    transition: 1s ease-in;
 }
 
 /* Aside customs */
@@ -46,10 +59,12 @@ aside::after {
 }
 
 .aside-container {
+    padding-left: 200px;
+    font-size: 80px;
     display: flex;
     width: 100%;
     justify-content: center;
-    padding-top: 150px;
+    padding-top: 130px;
     color: #fff;
 }
 
@@ -65,7 +80,7 @@ aside h1 {
 
 aside .btn {
     display: inline-block;
-    padding: 18px 30px;
+    padding: 16px 30px;
     color: #fff;
     background-color: transparent;
     border: 2px solid crimson;
@@ -80,6 +95,7 @@ aside .btn {
 aside .btn:hover {
     color: white;
     background-color: crimson;
+    transition: 1s ease-in-out;
 }
 
 aside h1:nth-child(1) {
@@ -116,7 +132,6 @@ aside h1 span {
     animation: text_reveal_box 1s ease;
     animation-delay: .5s;
 }
-
 @keyframes text_reveal_box {
     50% {
         width: 100%;
@@ -137,7 +152,86 @@ aside h1 span {
 
 /* End of Aside */
 
+/* ================================= ABOUT US============================================== */
+.about{
+    height: 100vh;
+    background: #153c4e;
+}
+
+.title{
+    text-align: center;
+}
+.text-header{
+    padding: 20px 150px 0;
+}
+.text-container{
+    flex-wrap: wrap;
+}
+.text-container p{
+    padding: 40px;
+    font-size: 18px;
+    color: #fff;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.about .btn{
+    margin: auto;
+    font-size: 18px;
+    color: #ffffff;
+    background: #05696b;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+.about .btn:hover{
+    cursor: pointer;
+}
+.about .link{
+    font-size: 21px;
+    padding: 0 55px;
+}
+.vision-container{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 20px;
+}
+.contain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.vision{
+    display: grid;
+    height: auto;
+    padding: 0px 20px 10px;
+    width: 350px;
+    margin:0 90px ;
+    background-color: #509c80;
+    border-radius: 8px ;
+}
+.vision img{
+    width: 100px;
+}
+.vision h1{
+    margin: 10px;
+}
+.vision .vision-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.vision .vision-cont .txt{
+    font-size: 16px;
+}
+/* ===================================END OF ABOUT===================== */
+
 html {
+    scroll-behavior: smooth;
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -172,7 +266,7 @@ p {
 
 .McGill {
     height: 200;
-    width: 600;
+    width: 50%;
     margin-right: 3.5px;
     margin-left: 5px;
 }
