@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,11 @@
     <title>Savannah Silica</title>
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="contacts" href="HTML-CSS-for-begginers/contacts.html">
+
+    <!-- iconsout icons link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
+
 <body>
     <section class="container">
         <nav>
@@ -26,7 +31,7 @@
                     <h1>Welcome, <span></span></h1>
                     <h1>We are <span></span></h1>
                     <h1>Savannah Silica <span></span></h1>
-                <a href="#about" type="button" class="btn">About Us</a>
+                    <a href="#about" type="button" class="btn">About Us</a>
                 </div>
             </div>
         </aside>
@@ -34,20 +39,23 @@
     </section>
 
     <section class="about" id="about">
-        <div class="title"> <h1>About Us</h1></div>
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
         <div class="text-header">
             <h1>WE ARE<span> SAVANNAH SILICA</span></h1>
         </div>
         <div class="text-container">
-            <p>When you join us, you will have the opportunity to learn new skills in a variety of formats. You will also meet local developers virtually or in person with a similar interest in technology. The community prides itself on being an inclusive enviroment where everyone and anyone interested in tech from beginner developers to experienced profesionals are welcome to join</p>
+            <p>When you join us, you will have the opportunity to learn new skills in a variety of formats. You will also meet local developers virtually or in person with a similar interest in technology. The community prides itself on being an inclusive
+                enviroment where everyone and anyone interested in tech from beginner developers to experienced profesionals are welcome to join</p>
             <div class="link">
                 <a href="https://github.com/Savannah-silica">VIEW OUR PROJECTS ></a>
             </div>
         </div>
         <div class="btn">
-             <a href="" type="button">Build In Public</a>
+            <a href="" type="button">Build In Public</a>
         </div>
-        
+
         <!-- VISION AND MISSION -->
 
         <article class="vision-container">
@@ -76,7 +84,7 @@
                 </div>
             </div>
         </article>
-      <!-- ===================================End of About========================================= -->
+        <!-- ===================================End of About========================================= -->
     </section>
 
     <div class="sponsor-container">
@@ -88,7 +96,7 @@
         </div>
         <div class="row images">
             <div class="McGill img_block">
-             <img src="assets/McGill University png.png" alt="McGill university logo">
+                <img src="assets/McGill University png.png" alt="McGill university logo">
             </div>
             <div class="Amity img_block">
                 <img src="assets/Amity University png.png" alt="Amity University logo">
@@ -108,7 +116,7 @@
             <div class="container_contact">
                 <div class="row contact_header">
                     <h3>Contact Us</h3>
-                    
+
                 </div>
                 <div class="row contact_details">
                     <div class="card_item">
@@ -167,10 +175,57 @@
     </section>
     <!-- ======End of Contact page ===== -->
 
-        
+    <!-- =======footer====== -->
+    <div class="footer">
+        <div class="footer_container">
+            <div class="company_description">
+                <h3>Savanna Silica</h3>
+                <p>We're a community of great developers you'll ever meet. Join us to grow together in Tech industry.We help each one with equal opportunities to enhance your skills.
+                </p>
+            </div>
+            <div class="links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Social Media Handles</h3>
+                <p><i class="uil uil-linkedin"></i> LinkedIn</p>
+                <p><i class="uil uil-twitter"></i> Twiter</p>
+                <p><i class="uil uil-instagram-alt"></i> Instagram</p>
+                <p><i class="uil uil-facebook"></i> Facebook</p>
+            </div>
+            <div class="footer_contact">
+                <h4>Adress</h4>
+                <p><i class="uil uil-phone-volume"></i> +254 115 74583</p>
+                <p><i class="uil uil-envelope-check"></i> savanahsilica@gmail.com</p>
+                <p><i class="uil uil-map-marker"></i> Kiharu, Murang'a University</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="copyright"></div>
+    <!-- =======end of footer====== -->
+
     </section>
 
-   
-    
+
+    <script>
+        const paragraph = ` 
+      	<p>
+      	Copyright &copy; ${new Date().getFullYear()} Savanna Silica
+      	</p>`;
+        document.getElementById("copyright").innerHTML = paragraph;
+    </script>
 </body>
+
 </html>
