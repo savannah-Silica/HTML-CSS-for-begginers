@@ -353,6 +353,14 @@ html {
 } */
 
 
+.discover_best_classes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(59, 58, 58, 0.7)), url('/assets/discover-more.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* ====contact section */
 
 .contact_page {
